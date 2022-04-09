@@ -4,7 +4,7 @@ import numpy as np
 import csv
 import streamlit as st
 import Dashboard, form, medication, Predict, profile
-import streamlit_authenticator as stauth
+# import streamlit_authenticator as stauth
 import pandas as pd
 import streamlit as st
 st.set_page_config(page_title ="DermCare", page_icon="🥇",layout='wide',initial_sidebar_state='collapsed')
