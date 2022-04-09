@@ -1,4 +1,4 @@
-from tkinter.ttk import Style
+# from tkinter.ttk import Style
 from PIL import Image
 import numpy as np
 import csv
