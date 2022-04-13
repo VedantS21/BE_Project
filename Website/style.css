@@ -1,0 +1,54 @@
+.css-18e3th9 {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+.css-1d391kg {
+    padding-top: 3.5rem;
+    padding-right: 1rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1rem;
+}
+h1#derm-care{
+    background-color: rgb(15, 58, 58);
+    border-color: aqua;
+    border-radius: 6px;
+}
+h1#patient-form{
+    background-color: rgb(9, 10, 48);
+    border-radius: 9px;
+    text-decoration: underline;
+    text-decoration-color: rgb(14, 135, 176);
+    text-underline-offset: 2px;
+}
+div.css-1r6slb0.e1tzin5v2{
+    border-radius: 9px; 
+    border: 3px;
+}
+div.css-ml2xh6.e1tzin5v2{
+    align-content: center;
+    align-items: center;
+}
+h3#click{
+    text-align: center;
+    font: Serif;
+}
+h3#upload{
+    text-align: center;
+    font: Serif;
+}
+h3#predict{
+    text-align: center;
+    font: Serif;
+}
+div.css-183lzff.eyqtai90{
+    text-align: center;
+    font: Serif;
+}
+footer{
+    visibility: hidden;
+}
+h3#welcome-to-derm-care{
+    text-underline-offset: 3px;
+}
