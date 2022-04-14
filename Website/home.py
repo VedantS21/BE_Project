@@ -6,7 +6,7 @@ import Dashboard, form, medication, Predict, profile
 import pandas as pd
 import streamlit as st
 st.set_page_config(page_title ="DermCare", page_icon="🥇",layout='wide',initial_sidebar_state='collapsed')
-with open(r"Website\style.css") as f:
+with open(r"Website/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 page_bg_img = '''
