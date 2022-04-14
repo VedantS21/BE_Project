@@ -26,7 +26,7 @@ proceed = False
 def signin(uname,pword):
     a = b = ""
     data = []
-    with open(r"Website\data\Login.csv") as file:
+    with open("Website\data\Login.csv") as file:
         read = csv.reader(file)
         for row in read:
             data.append(row)
