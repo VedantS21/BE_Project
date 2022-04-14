@@ -1,7 +1,5 @@
-from abc import ABC
 import streamlit as st
 import pandas as pd
-import csv
 def app():
     st.title("Patient Form")
     st.text("")

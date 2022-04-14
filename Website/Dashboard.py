@@ -1,8 +1,5 @@
-from email.mime import image
 from enum import auto
 import streamlit as st
-import model
-from io import BytesIO,StringIO
 from PIL import Image
 
 def app():

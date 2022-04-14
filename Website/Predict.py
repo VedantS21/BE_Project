@@ -1,10 +1,7 @@
 import pandas as pd
-import numpy as np
-from io import BytesIO,StringIO
-import cv2
+from io import BytesIO
 
 from PIL import Image
-import numpy as np
 import streamlit as st
 import model
 

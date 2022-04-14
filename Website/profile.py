@@ -1,9 +1,7 @@
 from secrets import choice
 from struct import pack
 import streamlit as st
-import pandas as pd
 import csv
-import pdfkit as pk 
             
 def app():
     st.title("My Profile")
