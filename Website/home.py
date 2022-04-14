@@ -6,7 +6,7 @@ import Dashboard, form, medication, Predict, profile
 import pandas as pd
 import streamlit as st
 st.set_page_config(page_title ="DermCare", page_icon="🥇",layout='wide',initial_sidebar_state='collapsed')
-with open(r"C:\Users\vedan\Desktop\BE_Project\Website\style.css") as f:
+with open(r"Website\style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 page_bg_img = '''
@@ -26,7 +26,7 @@ proceed = False
 def signin(uname,pword):
     a = b = ""
     data = []
-    with open(r"C:\Users\vedan\Desktop\BE_Project\Website\data\Login.csv") as file:
+    with open(r"Website\data\Login.csv") as file:
         read = csv.reader(file)
         for row in read:
             data.append(row)
@@ -54,10 +54,10 @@ def signin(uname,pword):
         st.sidebar.error("Login Unsuccessful")
 
 def register(n,usrname,psword):
-    lg = pd.read_csv(r"C:\Users\vedan\Desktop\BE_Project\Website\data\Login.csv")
+    lg = pd.read_csv(r"Website\data\Login.csv")
     new_data = {"Name":n, "Username":usrname, "Password":psword}
     lg = lg.append(new_data, ignore_index=True)
-    lg.to_csv(r"C:\Users\vedan\Desktop\BE_Project\Website\data\Login.csv", index=False)
+    lg.to_csv(r"Website\data\Login.csv", index=False)
     st.success("User registered successfully")
 
 choice = st.sidebar.selectbox("Sign Up", ("Login","Create Account","None"))

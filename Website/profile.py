@@ -8,7 +8,7 @@ def app():
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
     patient_data = []
-    with open(r"C:\Users\vedan\Desktop\BE_Project\Website\data\patient_form.csv") as file:
+    with open(r"Website\data\patient_form.csv") as file:
         read = csv.reader(file)
         for row in read:
             patient_data.append(row)    

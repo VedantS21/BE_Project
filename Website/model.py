@@ -117,7 +117,7 @@ class TFModel:
 # model = open("C:/Users/vedan/Desktop/BE Project/Skin Detection Model/BE Project/Final TensorFlow/saved_model.pb")   # Windows
 
 
-model_path = "C:/Users/vedan/Desktop/BE_Project/SDModel/Final_TensorFlow"
+model_path = "SDModel\Final_TensorFlow"
 
 STYLE = """
 <style>
