@@ -14,6 +14,7 @@ h1#derm-care{
     background-color: rgb(15, 58, 58);
     border-color: aqua;
     border-radius: 6px;
+    font-family: serif;
 }
 h1#patient-form{
     background-color: rgb(9, 10, 48);
@@ -29,20 +30,31 @@ div.css-1r6slb0.e1tzin5v2{
 
 h3#click{
     text-align: center;
-    font: Serif;
+    font-family: serif;
 }
 h3#upload{
     text-align: center;
-    font: Serif;
+    font-family: serif;
 }
 h3#predict{
     text-align: center;
-    font: Serif;
+    font-family: serif;
 }
 
 h3#capture-infected-skin-image{
     text-align: center;
     font-size: small;
+    font-family: serif;
+}
+h3#upload-captured-image{
+    text-align: center;
+    font-size: small;
+    font-family: serif;
+}
+h3#get-predicted-result{
+    text-align: center;
+    font-size: small;
+    font-family: serif;
 }
 footer{
     visibility: hidden;
