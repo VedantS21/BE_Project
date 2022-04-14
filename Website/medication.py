@@ -4,7 +4,7 @@ def app():
    st.title("Home Remedies and Diet")
    st.write("")
    st.write("")
-   st.header("ECZEMA")
+   st.header("Eczema")
    st.subheader("Precautions")
    st.text(
       """
@@ -36,7 +36,7 @@ def app():
    st.write("")
    st.markdown("""---""")  
    st.write("")
-   st.header("FOOT ULCER")
+   st.header("Foot Ulcer")
    st.subheader("Precautions")
    st.text(
       """
@@ -75,7 +75,7 @@ def app():
    st.write("")
    st.markdown("""---""")  
    st.write("")
-   st.header("MEASLES")
+   st.header("Measles")
    st.subheader("Precautions")
    st.text(
       """
@@ -113,7 +113,7 @@ def app():
    st.write("")
    st.markdown("""---""")  
    st.write("")
-   st.header("RINGWORM")
+   st.header("Ringworm")
    st.subheader("Precautions")
    st.text(
       """
@@ -158,7 +158,7 @@ def app():
    st.write("")
    st.markdown("""---""")  
    st.write("")
-   st.header("HERPES ZOSTER")
+   st.header("Herpes Zoster")
    st.subheader("Precautions")
    st.text(
       """
@@ -191,7 +191,7 @@ def app():
    st.write("")
    st.markdown("""---""")  
    st.write("")
-   st.header("PSORIASIS")
+   st.header("Psoriasis")
    st.subheader("Precautions")
    st.text(
       """
