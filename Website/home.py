@@ -9,24 +9,13 @@ st.set_page_config(page_title ="DermCare", page_icon="🥇",layout='wide',initia
 with open(r"Website/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fdermatology&psig=AOvVaw1rn8EMc9114udwUG6fqBT3&ust=1649273854700000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCKiroYvW_fYCFQAAAAAdAAAAABAD");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 # look nice from the start
 
 proceed = False
 def signin(uname,pword):
     a = b = ""
     data = []
-    with open("Website\data\Login.csv") as file:
+    with open(r"Website/data/Login.csv") as file:
         read = csv.reader(file)
         for row in read:
             data.append(row)
@@ -54,10 +43,10 @@ def signin(uname,pword):
         st.sidebar.error("Login Unsuccessful")
 
 def register(n,usrname,psword):
-    lg = pd.read_csv(r"Website\data\Login.csv")
+    lg = pd.read_csv(r"Website/data/Login.csv")
     new_data = {"Name":n, "Username":usrname, "Password":psword}
     lg = lg.append(new_data, ignore_index=True)
-    lg.to_csv(r"Website\data\Login.csv", index=False)
+    lg.to_csv(r"Website/data/Login.csv", index=False)
     st.success("User registered successfully")
 
 choice = st.sidebar.selectbox("Sign Up", ("Login","Create Account","None"))

@@ -6,7 +6,7 @@ import streamlit as st
 import model
 
 def app():
-    model_path = "SDModel\Final_TensorFlow"
+    model_path = r"SDModel/Final_TensorFlow"
     tf_model = model.TFModel(model_path)
     tf_model.load()
 

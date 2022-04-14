@@ -27,7 +27,7 @@ def app():
     st.write("")
     show_file = st.empty()
     c1,c2,c3=st.columns([1,6,1])
-    file = Image.open('Website\Skin.jpg')
+    file = Image.open(r'Website/Skin.jpg')
     c2.image(file, use_column_width=auto )
 
     st.markdown("""---""") 
