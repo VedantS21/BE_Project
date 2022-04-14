@@ -76,3 +76,7 @@ h3#welcome-to-derm-care{
     text-decoration: dotted;
     font-style: italic;
 }
+
+h2#eczema{
+    font-family: serif;
+}
