@@ -26,10 +26,7 @@ div.css-1r6slb0.e1tzin5v2{
     border-radius: 9px; 
     border: 3px;
 }
-div.css-ocqkz7.e1tzin5v4{
-    align-content: center;
-    align-items: center;
-}
+
 h3#click{
     text-align: center;
     font: Serif;
@@ -42,13 +39,12 @@ h3#predict{
     text-align: center;
     font: Serif;
 }
-div.css-183lzff.eyqtai90{
-    text-align: center;
-    font: Serif;
-}
+
 footer{
     visibility: hidden;
 }
 h3#welcome-to-derm-care{
     text-underline-offset: 3px;
+    text-decoration: dotted;
+    font-style: italic;
 }
