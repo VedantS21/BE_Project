@@ -2,7 +2,8 @@ import streamlit as st
 
 def app():
    st.title("Home Remedies and Diet")
-   
+   st.write("")
+   st.write("")
    st.header("Eczema")
    st.subheader("Precautions")
    st.text(
