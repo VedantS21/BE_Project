@@ -4,7 +4,7 @@ def app():
    st.title("Home Remedies and Diet")
    st.write("")
    st.write("")
-   st.header("Eczema")
+   st.header("ECZEMA")
    st.subheader("Precautions")
    st.text(
       """
