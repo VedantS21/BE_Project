@@ -32,6 +32,9 @@ def app():
          unpasteurized sauerkraut
       """
       )
+   st.write("")
+   st.markdown("""---""")  
+   st.write("")
    st.header("FOOT ULCER")
    st.subheader("Precautions")
    st.text(
@@ -68,6 +71,9 @@ def app():
       3) Non-starchy vegetables, such as: Cauliflower, Tomatoes, Peppers, Carrots, Broccoli, Cabbage, Kale, Spinach
       """
       )
+   st.write("")
+   st.markdown("""---""")  
+   st.write("")
    st.header("MEASLES")
    st.subheader("Precautions")
    st.text(
@@ -103,7 +109,9 @@ def app():
          basil(tulsi) and mint leaves.
       """
       )
-   
+   st.write("")
+   st.markdown("""---""")  
+   st.write("")
    st.header("RINGWORM")
    st.subheader("Precautions")
    st.text(
@@ -146,7 +154,9 @@ def app():
       6) Drink plenty of water.
       """
       )
-
+   st.write("")
+   st.markdown("""---""")  
+   st.write("")
    st.header("HERPES ZOSTER")
    st.subheader("Precautions")
    st.text(
@@ -177,7 +187,9 @@ def app():
       4) Consume whole grains, especially millets, but in moderate quantities.
       """
       )
-
+   st.write("")
+   st.markdown("""---""")  
+   st.write("")
    st.header("PSORIASIS")
    st.subheader("Precautions")
    st.text(

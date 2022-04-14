@@ -40,6 +40,10 @@ h3#predict{
     font: Serif;
 }
 
+h3#capture-infected-skin-image{
+    text-align: center;
+    font-size: small;
+}
 footer{
     visibility: hidden;
 }
