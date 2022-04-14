@@ -13,12 +13,12 @@ def app():
     st.title("Skin Diseases Detection")
     st.text("")
     st.text("")
-    file = st.file_uploader("Upload file with skin disease image", type=["csv","png","jpg","jpeg"])
+    file = st.file_uploader("Upload file with skin disease image \n Capture a closer Image of Infected Area in proper lighting condition", type=["png","jpg","jpeg"])
     show_file = st.empty()
 
     if not file:
         print("File not selected")
-        show_file.info("Please UPLOAD a file : {} ".format(''.join(["csv","png","jpg","jpeg"])))
+        show_file.info("Please UPLOAD a file : {} ".format(''.join(["png","jpg","jpeg"])))
         return
     content = file.getvalue()
 
