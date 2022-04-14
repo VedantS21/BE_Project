@@ -31,14 +31,20 @@ div.css-1r6slb0.e1tzin5v2{
 h3#click{
     text-align: center;
     font-family: serif;
+    background-color: rgb(15, 58, 58);
+    border-radius: 9px;
 }
 h3#upload{
     text-align: center;
     font-family: serif;
+    background-color: rgb(15, 58, 58);
+    border-radius: 9px;
 }
 h3#predict{
     text-align: center;
     font-family: serif;
+    background-color: rgb(15, 58, 58);
+    border-radius: 9px;
 }
 
 h3#capture-infected-skin-image{
