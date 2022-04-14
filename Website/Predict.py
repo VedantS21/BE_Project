@@ -16,7 +16,7 @@ def app():
     st.text("")
     st.text("")
     st.success("Capture a closer Image of Infected Area in proper lighting condition")
-    file = st.file_uploader("Upload file with skin disease image", type=["png","jpg","jpeg"])
+    file = st.file_uploader("", type=["png","jpg","jpeg"])
     show_file = st.empty()
 
     if not file:
