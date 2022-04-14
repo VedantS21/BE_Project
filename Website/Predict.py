@@ -82,7 +82,7 @@ def app():
                     unpasteurized sauerkraut
                     """
                     )
-            elif final_pred == "Foot ulcer" :
+            elif final_pred == "Foot Ulcer" :
                 st.subheader("Precautions")
                 st.text(
                     """
