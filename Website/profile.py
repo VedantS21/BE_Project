@@ -8,6 +8,7 @@ def app():
     st.title("My Profile")
     st.write("")
 
+    st.write(home.proceed)
     if home.proceed == True:
         st.write("successfull")
     if home.proceed == False:
