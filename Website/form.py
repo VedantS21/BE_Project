@@ -30,9 +30,8 @@ def app():
     
     st.write("")
     st.write("")
-    city = st.text_input("Enter Your City")
+    city = c1.text_input("Enter Your City")
     abc = "https://www.practo.com/"+ city + "/dermatologist"
-    st.text(abc)
     url = abc
 
     st.markdown("[Check doctors nearby](%s)" % url)
