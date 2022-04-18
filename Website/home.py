@@ -57,8 +57,8 @@ if choice == "Login":
     password = st.sidebar.text_input("Password",type='password')
     submit1 = st.sidebar.button("Login")
     if submit1 == True:
-        signin(username,password)
         proceed = True
+        signin(username,password)
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")
