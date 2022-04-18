@@ -13,6 +13,7 @@ with open(r"Website/style.css") as f:
 
 proceed = False
 def signin(uname,pword):
+    proceed = False
     a = b = ""
     data = []
     with open(r"Website/data/Login.csv") as file:
@@ -43,6 +44,7 @@ def signin(uname,pword):
         st.sidebar.error("Login Unsuccessful")
 
 def register(n,usrname,psword):
+    proceed = False
     lg = pd.read_csv(r"Website/data/Login.csv")
     new_data = {"Name":n, "Username":usrname, "Password":psword}
     lg = lg.append(new_data, ignore_index=True)
@@ -73,8 +75,9 @@ PAGES = {
 "Home Page" : Dashboard,
 "Predict Disease": Predict,
 "Home Remedies & Diet": medication,
-"My Profile": profile,
-"Patient Form" : form
+"Patient Form" : form,
+"My Profile": profile
+
 }
 selection = st.sidebar.radio("Navigation", list(PAGES.keys()))
 page = PAGES[selection]
