@@ -57,6 +57,7 @@ if choice == "Login":
     username = st.sidebar.text_input("User Name")
     password = st.sidebar.text_input("Password",type='password')
     submit1 = st.sidebar.button("Login")
+    usname = signin(username,password)
     if submit1 == True:
         proceed = True
         usname = signin(username,password)
@@ -71,6 +72,7 @@ elif choice == "Create Account":
         register(name,username,password)
         proceed = False
 
+usrname_1 = usname
 
 PAGES = {
 "Home Page" : Dashboard,

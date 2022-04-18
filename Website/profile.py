@@ -9,7 +9,7 @@ def app():
     st.title("My Profile")
     st.write("")
 
-    name = home.usname
+    name = home.usrname_1 
     st.write(name)
 
     col1,col2,col3 = st.columns(3)
