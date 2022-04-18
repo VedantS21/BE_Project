@@ -90,6 +90,7 @@ if choice == "Login":
         proceed = True
         signin(username,password)
         usname = check(username,password)
+        st.write(usname)
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")
@@ -100,6 +101,7 @@ elif choice == "Create Account":
         register(name,username,password)
         proceed = False
 
+st.write(usname)
 
 PAGES = {
 "Home Page" : Dashboard,
