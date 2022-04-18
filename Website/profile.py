@@ -2,13 +2,13 @@ from secrets import choice
 from struct import pack
 import streamlit as st
 import csv
-import home
+from home import usname
             
 def app():
     st.title("My Profile")
     st.write("")
 
-    name = home.usname
+    name = usname
     st.write(name)
 
     col1,col2,col3 = st.columns(3)
