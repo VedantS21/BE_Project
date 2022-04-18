@@ -2,10 +2,15 @@ from secrets import choice
 from struct import pack
 import streamlit as st
 import csv
+import home
             
 def app():
     st.title("My Profile")
     st.write("")
+
+    if home.proceed == True:
+        st.write("successfull")
+
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
     patient_data = []
