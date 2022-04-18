@@ -8,10 +8,10 @@ def app():
     st.title("My Profile")
     st.write("")
 
-    st.write(home.show)
-    if home.show == True:
+    st.write(home.proceed)
+    if home.proceed == True:
         st.write("successfull")
-    if home.show == False:
+    if home.proceed == False:
         st.write("BOMBLA!!!....")
 
     col1,col2,col3 = st.columns(3)

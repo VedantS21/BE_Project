@@ -10,8 +10,8 @@ with open(r"Website/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # look nice from the start
-
-proceed = False
+global proceed
+# proceed = False
 def signin(uname,pword):
     proceed = False
     a = b = ""
@@ -60,7 +60,6 @@ if choice == "Login":
     if submit1 == True:
         signin(username,password)
         proceed = True
-        show = True
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")
