@@ -8,11 +8,11 @@ def app():
     st.title("My Profile")
     st.write("")
 
-    n1 = home.usname
-    st.write(n1)
+    name = home.usname
+    st.write(name)
 
     col1,col2,col3 = st.columns(3)
-    name = col1.text_input("Enter your name")
+    # name = col1.text_input("Enter your name")
     patient_data = []
     with open(r"Website/data/patient_form.csv") as file:
         read = csv.reader(file)
