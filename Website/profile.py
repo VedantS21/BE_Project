@@ -5,11 +5,13 @@ import streamlit as st
 import csv
 import home
 
+st.write(home.usname)
+
 def app():
     st.title("My Profile")
     st.write("")
 
-    st.write(home.usname)
+    
 
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
