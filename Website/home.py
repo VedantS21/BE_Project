@@ -9,6 +9,8 @@ st.set_page_config(page_title ="DermCare", page_icon="🥇",layout='wide')
 with open(r"Website/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+sin = False
+
 # look nice from the start
 
 proceed = False
@@ -57,6 +59,7 @@ if choice == "Login":
     submit1 = st.sidebar.button("Login")
     if submit1 == True:
         signin(username,password)
+        sin = True
         proceed = True
 
 elif choice == "Create Account":
