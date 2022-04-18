@@ -13,7 +13,6 @@ with open(r"Website/style.css") as f:
 global proceed
 # proceed = False
 def signin(uname,pword):
-    proceed = False
     a = b = ""
     data = []
     with open(r"Website/data/Login.csv") as file:
