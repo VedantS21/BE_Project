@@ -12,6 +12,7 @@ def app():
     if home.proceed == True:
         st.write("successfull")
     if home.proceed == False:
+        st.write(home.username)
         st.write("BOMBLA!!!....")
 
     col1,col2,col3 = st.columns(3)
