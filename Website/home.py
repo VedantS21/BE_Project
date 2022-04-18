@@ -43,7 +43,6 @@ def signin(uname,pword):
         st.sidebar.success("Login Successful")
     else:
         st.sidebar.error("Login Unsuccessful")
-    return(str(a))
 
 def register(n,usrname,psword):
     lg = pd.read_csv(r"Website/data/Login.csv")
@@ -60,7 +59,7 @@ if choice == "Login":
     submit1 = st.sidebar.button("Login")
     if submit1 == True:
         proceed = True
-        usname = signin(username,password)
+        signin(username,password)
         # st.write(type(usname))
 
 elif choice == "Create Account":

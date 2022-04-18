@@ -3,9 +3,6 @@ from struct import pack
 # from turtle import home
 import streamlit as st
 import csv
-import home
-
-st.write(home.usname)
 
 def app():
     st.title("My Profile")
@@ -35,5 +32,5 @@ def app():
                 col2.subheader("Any other medical condition: "+patient_data[x][9])
                 # st.write(patient_data[x])
                 continue
-    else:
-        st.error("Patient data not found")
+            else:
+                st.error("Patient data not found")

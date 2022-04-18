@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-usrname_1 = "Anish"
+
 def app():
     st.title("Patient Form")
     st.text("")
@@ -35,4 +35,4 @@ def app():
     st.text(abc)
     url = abc
 
-    st.markdown("Check doctors nearby [link](%s)" % url)
+    st.markdown("[Check doctors nearby](%s)" % url)
