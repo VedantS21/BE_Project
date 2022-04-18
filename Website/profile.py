@@ -2,17 +2,13 @@ from secrets import choice
 from struct import pack
 import streamlit as st
 import csv
-import home
             
 def app():
     st.title("My Profile")
     st.write("")
 
-    name = home.usname
-    st.write(name)
-
     col1,col2,col3 = st.columns(3)
-    # name = col1.text_input("Enter your name")
+    name = col1.text_input("Enter your name")
     patient_data = []
     with open(r"Website/data/patient_form.csv") as file:
         read = csv.reader(file)
