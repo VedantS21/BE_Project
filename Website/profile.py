@@ -3,13 +3,13 @@ from struct import pack
 # from turtle import home
 import streamlit as st
 import csv
-import home
+import form
             
 def app():
     st.title("My Profile")
     st.write("")
 
-    name = home.usrname_1 
+    name = form.usrname_1 
     st.write(name)
 
     col1,col2,col3 = st.columns(3)
