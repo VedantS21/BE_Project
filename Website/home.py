@@ -44,7 +44,6 @@ def signin(uname,pword):
         st.sidebar.error("Login Unsuccessful")
 
 def register(n,usrname,psword):
-    proceed = False
     lg = pd.read_csv(r"Website/data/Login.csv")
     new_data = {"Name":n, "Username":usrname, "Password":psword}
     lg = lg.append(new_data, ignore_index=True)
