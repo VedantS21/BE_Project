@@ -27,9 +27,11 @@ def app():
             pf.to_csv(r"Website/data/patient_form.csv", index=False)
             st.write(pf)
     
+    st.write("")
+    st.write("")
     city = st.text_input("Enter Your City")
     abc = "https://www.practo.com/"+ city + "/dermatologist"
     st.text(abc)
     url = abc
 
-    st.markdown("check out this [link](%s)" % url)
+    st.markdown("Check doctors nearby [link](%s)" % url)

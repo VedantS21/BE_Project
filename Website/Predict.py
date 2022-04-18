@@ -10,7 +10,7 @@ def doc_nearby(city):
     st.text(abc)
     url = abc
    
-    st.markdown("check out this [link](%s)" % url)
+    st.markdown("Check doctors nearby [link](%s)" % url)
 
 def app():
     model_path = r"SDModel/Final_TensorFlow"
@@ -129,14 +129,7 @@ def app():
                     3) Non-starchy vegetables, such as: Cauliflower, Tomatoes, Peppers, Carrots, Broccoli, Cabbage, Kale, Spinach
                     """
                     )
-                
-                city = st.text_input("Enter Your City")
-                abc = "https://www.practo.com/"+ city + "/dermatologist"
-                st.text(abc)
-                url = abc
-
-                st.markdown("check out this [link](%s)" % url)
-            
+                            
             elif final_pred == "measles" :
                 st.subheader("Precautions")
                 st.text(
