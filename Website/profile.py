@@ -2,13 +2,13 @@ from secrets import choice
 from struct import pack
 import streamlit as st
 import csv
-from home import usname
+import home
             
 def app():
     st.title("My Profile")
     st.write("")
 
-    name = usname
+    name = home.usname
     st.write(name)
 
     col1,col2,col3 = st.columns(3)
@@ -35,3 +35,5 @@ def app():
                 col2.subheader("Any other medical condition: "+patient_data[x][9])
                 # st.write(patient_data[x])
                 continue
+    else:
+        st.error("Patient data not found")
