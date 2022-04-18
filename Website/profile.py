@@ -5,6 +5,9 @@ import csv
             
 def app():
     st.title("My Profile")
+    city = st.text_input("Enter Your City")
+    abc = "https://www.practo.com/"+ city
+    st.text(abc)
     url = "https://www.practo.com/doctors"
     st.write("check out this [link](%s)" % url)
 
