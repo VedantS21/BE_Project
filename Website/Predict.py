@@ -5,6 +5,13 @@ from PIL import Image
 import streamlit as st
 import model
 
+def doc_nearby(city):
+    abc = "https://www.practo.com/"+ city + "/dermatologist"
+    st.text(abc)
+    url = abc
+   
+    st.markdown("check out this [link](%s)" % url)
+
 def app():
     model_path = r"SDModel/Final_TensorFlow"
     tf_model = model.TFModel(model_path)
@@ -122,6 +129,9 @@ def app():
                     3) Non-starchy vegetables, such as: Cauliflower, Tomatoes, Peppers, Carrots, Broccoli, Cabbage, Kale, Spinach
                     """
                     )
+                
+                city = st.text_input("Enter Your City")
+                doc_nearby(city)
             
             elif final_pred == "measles" :
                 st.subheader("Precautions")
