@@ -42,6 +42,37 @@ def signin(uname,pword):
     else:
         st.sidebar.error("Login Unsuccessful")
 
+def check(uname,pword):
+    a = b = ""
+    data = []
+    with open(r"Website/data/Login.csv") as file:
+        read = csv.reader(file)
+        for row in read:
+            data.append(row)
+    col_1 = [x[1] for x in data]
+    col_2 = [x[2] for x in data]
+    if uname in col_1:
+        for x in range(0,len(data)):
+            if uname == data[x][1]:
+                a = data[x][1]
+                continue
+    else:
+        st.sidebar.error("User Not Registered")
+
+    if pword in col_2:
+        for x in range(0,len(data)):
+            if pword == data[x][2]:
+                b = data[x][2]
+                continue
+    else:
+        st.sidebar.error("Incorect Password")
+
+    if a == uname and b == pword:
+        st.sidebar.success("Login Successful")
+    else:
+        st.sidebar.error("Login Unsuccessful")
+    return(a)
+
 def register(n,usrname,psword):
     lg = pd.read_csv(r"Website/data/Login.csv")
     new_data = {"Name":n, "Username":usrname, "Password":psword}
@@ -58,6 +89,7 @@ if choice == "Login":
     if submit1 == True:
         proceed = True
         signin(username,password)
+        usname = check(username,password)
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")

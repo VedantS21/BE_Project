@@ -8,12 +8,8 @@ def app():
     st.title("My Profile")
     st.write("")
 
-    st.write(home.proceed)
-    if home.proceed == True:
-        st.write("successfull")
-    if home.proceed == False:
-        st.write(home.username)
-        st.write("BOMBLA!!!....")
+    name = home.check()
+    st.write(name)
 
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
