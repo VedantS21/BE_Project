@@ -131,7 +131,11 @@ def app():
                     )
                 
                 city = st.text_input("Enter Your City")
-                doc_nearby(city)
+                abc = "https://www.practo.com/"+ city + "/dermatologist"
+                st.text(abc)
+                url = abc
+
+                st.markdown("check out this [link](%s)" % url)
             
             elif final_pred == "measles" :
                 st.subheader("Precautions")
