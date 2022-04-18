@@ -60,7 +60,7 @@ if choice == "Login":
     if submit1 == True:
         proceed = True
         usname = signin(username,password)
-        st.write(usname)
+        st.write(type(usname))
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")
