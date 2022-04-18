@@ -33,8 +33,7 @@ def app():
     file.close()
 
     result = st.button("Predict", key="b1") 
-
-    st.text("www.google.com")  
+      
 
     print(type(file))
     print(type(content))

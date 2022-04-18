@@ -10,7 +10,7 @@ with open(r"Website/style.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # look nice from the start
-
+st.text("www.google.com")  
 proceed = False
 def signin(uname,pword):
     a = b = ""
