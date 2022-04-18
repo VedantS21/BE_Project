@@ -5,7 +5,7 @@ import csv
             
 def app():
     st.title("My Profile")
-    url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
+    url = "https://www.practo.com/doctors"
     st.write("check out this [link](%s)" % url)
 
     st.markdown("check out this [link](%s)" % url)
