@@ -42,7 +42,7 @@ def signin(uname,pword):
         st.sidebar.success("Login Successful")
     else:
         st.sidebar.error("Login Unsuccessful")
-    return(a)
+    return(str(a))
 
 def register(n,usrname,psword):
     lg = pd.read_csv(r"Website/data/Login.csv")
