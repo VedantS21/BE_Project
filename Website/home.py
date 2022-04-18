@@ -101,7 +101,6 @@ elif choice == "Create Account":
         register(name,username,password)
         proceed = False
 
-st.write(usname)
 
 PAGES = {
 "Home Page" : Dashboard,
