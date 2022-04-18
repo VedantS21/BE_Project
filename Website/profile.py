@@ -9,8 +9,7 @@ def app():
     abc = "https://www.practo.com/"+ city + "/dermatologist"
     st.text(abc)
     url = abc
-    st.write("check out this [link](%s)" % url)
-
+   
     st.markdown("check out this [link](%s)" % url)
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
