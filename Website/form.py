@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
+usrname_1 = "Anish"
 def app():
-    usrname_1 = "Anish"
     st.title("Patient Form")
     st.text("")
     #Method 1
