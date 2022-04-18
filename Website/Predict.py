@@ -32,7 +32,9 @@ def app():
         st.dataframe(data.head(10))
     file.close()
 
-    result = st.button("Predict", key="b1")   
+    result = st.button("Predict", key="b1") 
+
+    st.text("www.google.com")  
 
     print(type(file))
     print(type(content))
