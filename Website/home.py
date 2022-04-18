@@ -11,6 +11,7 @@ with open(r"Website/style.css") as f:
 
 # look nice from the start
 global proceed
+global usname
 # proceed = False
 def signin(uname,pword):
     a = b = ""
