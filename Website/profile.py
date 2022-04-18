@@ -5,12 +5,6 @@ import csv
             
 def app():
     st.title("My Profile")
-    city = st.text_input("Enter Your City")
-    abc = "https://www.practo.com/"+ city + "/dermatologist"
-    st.text(abc)
-    url = abc
-   
-    st.markdown("check out this [link](%s)" % url)
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
     patient_data = []
