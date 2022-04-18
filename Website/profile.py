@@ -8,8 +8,9 @@ def app():
     st.title("My Profile")
     st.write("")
 
+    name = home.usname
+    st.write(name)
     
-
     col1,col2,col3 = st.columns(3)
     name = col1.text_input("Enter your name")
     patient_data = []
