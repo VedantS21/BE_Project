@@ -11,7 +11,7 @@ with open(r"Website/style.css") as f:
 
 # look nice from the start
 
-
+proceed = False
 def signin(uname,pword):
     proceed = False
     a = b = ""
@@ -60,6 +60,7 @@ if choice == "Login":
     if submit1 == True:
         signin(username,password)
         proceed = True
+        show = True
 
 elif choice == "Create Account":
     name = st.sidebar.text_input("Name")
