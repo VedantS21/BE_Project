@@ -32,5 +32,3 @@ def app():
                 col2.subheader("Any other medical condition: "+patient_data[x][9])
                 # st.write(patient_data[x])
                 continue
-            else:
-                st.error("Patient data not found")
